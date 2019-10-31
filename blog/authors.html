@@ -78,7 +78,7 @@
 	(function(){
 		var corecss = document.createElement('link');
 		var themecss = document.createElement('link');
-		var corecssurl = "./../=comismde/syntaxhighlighter/shCore.css";
+		var corecssurl = "./../=cmsimde/syntaxhighlighter/shCore.css";
 		if ( corecss.setAttribute ) {
 				corecss.setAttribute( "rel", "stylesheet" );
 				corecss.setAttribute( "type", "text/css" );
@@ -97,7 +97,8 @@
 				themecss.rel = "stylesheet";
 				themecss.href = themecssurl;
 		}
-		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		//document.getElementById("syntaxhighlighteranchor").
+        appendChild(themecss);
 		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
 	})();
 	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
@@ -111,7 +112,7 @@
 </script>
 
 <!-- for LaTeX equations -->
-<script src="./../data/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script src="./../cmsimde/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 <script type="text/javascript">
 init_mathjax = function() {
     if (window.MathJax) {
