@@ -1,4 +1,4 @@
 name: Dart HTML test with just main
-mode: USA.dart
+mode: dart
 files:
-  - name: USA.dart
+  - name: main.dart
