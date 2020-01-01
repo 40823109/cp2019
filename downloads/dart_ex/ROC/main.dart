@@ -16,8 +16,94 @@ void main() {
   querySelector("#roc").onClick.listen((e) => drawROC(ctx));
   querySelector("#usa").onClick.listen((e) => drawUSA(ctx));
   querySelector("#button").onClick.listen((e) => clearCanvas());
+  querySelector("#uk").onClick.listen((e) => drawUK(ctx));
 }
 
+void drawUK(ctx){
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  
+  ctx.beginPath();
+  ctx.moveTo(0, 0);
+  ctx.lineTo(100, 66.67);
+  ctx.lineTo(77.64, 66.67);
+  ctx.lineTo(0, 14.9);
+  ctx.lineTo(0, 0);
+  ctx.moveTo(0, 80);
+  ctx.lineTo(135, 80);
+  ctx.lineTo(135, 0);
+  ctx.lineTo(165, 0);
+  ctx.lineTo(165, 80);
+  ctx.lineTo(300, 80);
+  ctx.lineTo(300, 120.11);
+  ctx.lineTo(165, 120.11);
+  ctx.lineTo(165, 200);
+  ctx.lineTo(135, 200);
+  ctx.lineTo(135, 119.89);
+  ctx.lineTo(0, 119.89);
+  ctx.lineTo(0, 80);
+  ctx.moveTo(277.65, 0);
+  ctx.lineTo(300, 0);
+  ctx.lineTo(200, 66.67);
+  ctx.lineTo(177.65, 66.67);
+  ctx.lineTo(277.65, 0);
+  ctx.moveTo(300, 200);
+  ctx.lineTo(200, 133.33);
+  ctx.lineTo(222.36, 133.33);
+  ctx.lineTo(300, 185.1);
+  ctx.lineTo(300, 200);
+  ctx.moveTo(0, 200);
+  ctx.lineTo(100, 133.33);
+  ctx.lineTo(122.35, 133.33);
+  ctx.lineTo(22.35, 200);
+  ctx.lineTo(0, 200);
+  ctx.strokeStyle = 'rgb(208, 12, 39)';
+  ctx.stroke();
+  ctx.fillStyle = 'rgb(208, 12, 39)';
+  ctx.fill();
+  ctx.closePath();
+  
+  ctx.beginPath();
+  ctx.moveTo(0, 22.33);
+  ctx.lineTo(66.45, 66.67);
+  ctx.lineTo(0, 66.67);
+  ctx.lineTo(0, 22.33);
+  ctx.moveTo(33.35, 0);
+  ctx.lineTo(125, 0);
+  ctx.lineTo(125, 61);
+  ctx.lineTo(33.35, 0);
+  ctx.moveTo(175, 0);
+  ctx.lineTo(266.45, 0);
+  ctx.lineTo(175, 61);
+  ctx.lineTo(175, 0);
+  ctx.moveTo(300, 22.33);
+  ctx.lineTo(300, 66.67);
+  ctx.lineTo(233.55, 66.67);
+  ctx.lineTo(300, 22.33);
+  ctx.moveTo(300, 133.33);
+  ctx.lineTo(300, 177.67);
+  ctx.lineTo(233.55, 133.33);
+  ctx.lineTo(300, 133.33);
+  ctx.moveTo(266.45, 200);
+  ctx.lineTo(175, 200);
+  ctx.lineTo(175, 139);
+  ctx.lineTo(266.45, 200);
+  ctx.moveTo(125, 200);
+  ctx.lineTo(33.55, 200);
+  ctx.lineTo(125, 139);
+  ctx.lineTo(125, 200);
+  ctx.moveTo(0, 133.33);
+  ctx.lineTo(66.45, 133.33);
+  ctx.lineTo(0, 177.67);
+  ctx.lineTo(0, 133.33);
+  ctx.strokeStyle = 'rgb(0, 31, 126)';
+  ctx.stroke();
+  ctx.fillStyle = 'rgb(0, 31, 126)';
+  ctx.fill();
+  ctx.closePath();
+  
+}
+  
 void drawUSA(ctx){
 
    ctx.clearRect(0, 0, flag_w, flag_h);
