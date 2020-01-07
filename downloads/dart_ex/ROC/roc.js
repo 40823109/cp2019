@@ -2191,9 +2191,18 @@
       t2 = J.get$onClick$x(t1.querySelector("#button"));
       t3 = H.getTypeArgumentByIndex(t2, 0);
       W._EventStreamSubscription$(t2._target, t2._eventType, H.functionTypeCheck(new F.main_closure1(), {func: 1, ret: -1, args: [t3]}), false, t3);
-      t1 = J.get$onClick$x(t1.querySelector("#uk"));
-      t3 = H.getTypeArgumentByIndex(t1, 0);
-      W._EventStreamSubscription$(t1._target, t1._eventType, H.functionTypeCheck(new F.main_closure2(), {func: 1, ret: -1, args: [t3]}), false, t3);
+      t3 = J.get$onClick$x(t1.querySelector("#uk"));
+      t2 = H.getTypeArgumentByIndex(t3, 0);
+      W._EventStreamSubscription$(t3._target, t3._eventType, H.functionTypeCheck(new F.main_closure2(), {func: 1, ret: -1, args: [t2]}), false, t2);
+      t2 = J.get$onClick$x(t1.querySelector("#japan"));
+      t3 = H.getTypeArgumentByIndex(t2, 0);
+      W._EventStreamSubscription$(t2._target, t2._eventType, H.functionTypeCheck(new F.main_closure3(), {func: 1, ret: -1, args: [t3]}), false, t3);
+      t3 = J.get$onClick$x(t1.querySelector("#France"));
+      t2 = H.getTypeArgumentByIndex(t3, 0);
+      W._EventStreamSubscription$(t3._target, t3._eventType, H.functionTypeCheck(new F.main_closure4(), {func: 1, ret: -1, args: [t2]}), false, t2);
+      t1 = J.get$onClick$x(t1.querySelector("#Russia"));
+      t2 = H.getTypeArgumentByIndex(t1, 0);
+      W._EventStreamSubscription$(t1._target, t1._eventType, H.functionTypeCheck(new F.main_closure5(), {func: 1, ret: -1, args: [t2]}), false, t2);
     },
     drawROC: function(ctx) {
       var angle, i, t1, t2, toX, toY;
@@ -2241,6 +2250,12 @@
     main_closure1: function main_closure1() {
     },
     main_closure2: function main_closure2() {
+    },
+    main_closure3: function main_closure3() {
+    },
+    main_closure4: function main_closure4() {
+    },
+    main_closure5: function main_closure5() {
     }
   };
   var holders = [C, H, J, P, W, F];
@@ -2540,7 +2555,7 @@
     call$0: function() {
       this.callback.call$0();
     },
-    $signature: 1
+    $signature: 2
   };
   P._FutureListener.prototype = {
     matchesErrorTest$1: function(asyncError) {
@@ -2749,7 +2764,7 @@
         t1.listenerHasError = false;
       }
     },
-    $signature: 1
+    $signature: 2
   };
   P._Future__propagateToListeners_handleWhenCompleteCallback_closure.prototype = {
     call$1: function(_) {
@@ -2774,7 +2789,7 @@
         t1.listenerHasError = true;
       }
     },
-    $signature: 1
+    $signature: 2
   };
   P._Future__propagateToListeners_handleError.prototype = {
     call$0: function() {
@@ -2801,7 +2816,7 @@
         t4.listenerHasError = true;
       }
     },
-    $signature: 1
+    $signature: 2
   };
   P._AsyncCallbackEntry.prototype = {};
   P.Stream.prototype = {
@@ -2929,7 +2944,7 @@
     call$0: function() {
       return this.$this.runGuarded$1(this.f);
     },
-    $signature: 1
+    $signature: 2
   };
   P._RootZone_bindUnaryCallbackGuarded_closure.prototype = {
     call$1: function(arg) {
@@ -3141,7 +3156,7 @@
       H.interceptedTypeCheck(e, "$isMouseEvent");
       return F.drawROC($.ctx);
     },
-    $signature: 2
+    $signature: 1
   };
   F.main_closure0.prototype = {
     call$1: function(e) {
@@ -3183,7 +3198,7 @@
       t1.strokeText(_s36_, 8.333333333333334, 100);
       return;
     },
-    $signature: 2
+    $signature: 1
   };
   F.main_closure1.prototype = {
     call$1: function(e) {
@@ -3191,7 +3206,7 @@
       $.ctx.clearRect(0, 0, 300, 200);
       return;
     },
-    $signature: 2
+    $signature: 1
   };
   F.main_closure2.prototype = {
     call$1: function(e) {
@@ -3281,7 +3296,56 @@
       t1.closePath();
       return;
     },
-    $signature: 2
+    $signature: 1
+  };
+  F.main_closure3.prototype = {
+    call$1: function(e) {
+      var t1;
+      H.interceptedTypeCheck(e, "$isMouseEvent");
+      t1 = $.ctx;
+      t1.clearRect(0, 0, 300, 200);
+      t1.fillStyle = "rgb(255, 255, 255)";
+      t1.fillRect(0, 0, 300, 200);
+      t1.beginPath();
+      t1.arc(150, 100, 60, 0, 6.283185307179586, true);
+      t1.closePath();
+      t1.fillStyle = "rgb(188, 0, 45)";
+      t1.fill();
+      return;
+    },
+    $signature: 1
+  };
+  F.main_closure4.prototype = {
+    call$1: function(e) {
+      var t1;
+      H.interceptedTypeCheck(e, "$isMouseEvent");
+      t1 = $.ctx;
+      t1.clearRect(0, 0, 300, 200);
+      t1.fillStyle = "rgb(255, 255, 255)";
+      t1.fillRect(0, 0, 300, 200);
+      t1.fillStyle = "rgb(0,85,164)";
+      t1.fillRect(0, 0, 100, 200);
+      t1.fillStyle = "rgb(239,65,53)";
+      t1.fillRect(200, 0, 100, 200);
+      return;
+    },
+    $signature: 1
+  };
+  F.main_closure5.prototype = {
+    call$1: function(e) {
+      var t1;
+      H.interceptedTypeCheck(e, "$isMouseEvent");
+      t1 = $.ctx;
+      t1.clearRect(0, 0, 300, 200);
+      t1.fillStyle = "rgb(255, 255, 255)";
+      t1.fillRect(0, 0, 300, 200);
+      t1.fillStyle = "rgb(0, 61, 165)";
+      t1.fillRect(0, 0, 300, 66.66666666666667);
+      t1.fillStyle = "rgb(170, 0, 40)";
+      t1.fillRect(0, 133.333333, 300, 66.66666666666667);
+      return;
+    },
+    $signature: 1
   };
   (function aliases() {
     var _ = J.Interceptor.prototype;
@@ -3295,7 +3359,7 @@
     _static_1(P, "async__AsyncRun__scheduleImmediateJsOverride$closure", "_AsyncRun__scheduleImmediateJsOverride", 3);
     _static_1(P, "async__AsyncRun__scheduleImmediateWithSetImmediate$closure", "_AsyncRun__scheduleImmediateWithSetImmediate", 3);
     _static_1(P, "async__AsyncRun__scheduleImmediateWithTimer$closure", "_AsyncRun__scheduleImmediateWithTimer", 3);
-    _static_0(P, "async___startMicrotaskLoop$closure", "_startMicrotaskLoop", 1);
+    _static_0(P, "async___startMicrotaskLoop$closure", "_startMicrotaskLoop", 2);
   })();
   (function inheritance() {
     var _inherit = hunkHelpers.inherit,
@@ -3307,7 +3371,7 @@
     _inherit(J.JSUnmodifiableArray, J.JSArray);
     _inheritMany(J.JSNumber, [J.JSInt, J.JSDouble]);
     _inheritMany(P.Error, [H.NullError, H.JsNoSuchMethodError, H.UnknownJsTypeError, H.TypeErrorImplementation, H.RuntimeError, P.AssertionError, P.NullThrownError, P.ArgumentError, P.UnsupportedError, P.UnimplementedError, P.ConcurrentModificationError, P.CyclicInitializationError]);
-    _inheritMany(H.Closure, [H.unwrapException_saveStackTrace, H.TearOffClosure, H.initHooks_closure, H.initHooks_closure0, H.initHooks_closure1, P._AsyncRun__initializeScheduleImmediate_internalCallback, P._AsyncRun__initializeScheduleImmediate_closure, P._AsyncRun__scheduleImmediateJsOverride_internalCallback, P._AsyncRun__scheduleImmediateWithSetImmediate_internalCallback, P._TimerImpl_internalCallback, P._Future__addListener_closure, P._Future__prependListeners_closure, P._Future__chainForeignFuture_closure, P._Future__chainForeignFuture_closure0, P._Future__chainForeignFuture_closure1, P._Future__propagateToListeners_handleWhenCompleteCallback, P._Future__propagateToListeners_handleWhenCompleteCallback_closure, P._Future__propagateToListeners_handleValueCallback, P._Future__propagateToListeners_handleError, P.Stream_length_closure, P.Stream_length_closure0, P._rootHandleUncaughtError_closure, P._RootZone_bindCallback_closure, P._RootZone_bindCallbackGuarded_closure, P._RootZone_bindUnaryCallbackGuarded_closure, W._EventStreamSubscription_closure, F.main_closure, F.main_closure0, F.main_closure1, F.main_closure2]);
+    _inheritMany(H.Closure, [H.unwrapException_saveStackTrace, H.TearOffClosure, H.initHooks_closure, H.initHooks_closure0, H.initHooks_closure1, P._AsyncRun__initializeScheduleImmediate_internalCallback, P._AsyncRun__initializeScheduleImmediate_closure, P._AsyncRun__scheduleImmediateJsOverride_internalCallback, P._AsyncRun__scheduleImmediateWithSetImmediate_internalCallback, P._TimerImpl_internalCallback, P._Future__addListener_closure, P._Future__prependListeners_closure, P._Future__chainForeignFuture_closure, P._Future__chainForeignFuture_closure0, P._Future__chainForeignFuture_closure1, P._Future__propagateToListeners_handleWhenCompleteCallback, P._Future__propagateToListeners_handleWhenCompleteCallback_closure, P._Future__propagateToListeners_handleValueCallback, P._Future__propagateToListeners_handleError, P.Stream_length_closure, P.Stream_length_closure0, P._rootHandleUncaughtError_closure, P._RootZone_bindCallback_closure, P._RootZone_bindCallbackGuarded_closure, P._RootZone_bindUnaryCallbackGuarded_closure, W._EventStreamSubscription_closure, F.main_closure, F.main_closure0, F.main_closure1, F.main_closure2, F.main_closure3, F.main_closure4, F.main_closure5]);
     _inheritMany(H.TearOffClosure, [H.StaticClosure, H.BoundClosure]);
     _inherit(H._AssertionError, P.AssertionError);
     _inherit(P._RootZone, P._Zone);
@@ -3454,7 +3518,7 @@
 ;
     C.C__RootZone = new P._RootZone();
   })();
-  var init = {mangledGlobalNames: {int: "int", double: "double", num: "num", String: "String", bool: "bool", Null: "Null", List: "List"}, mangledNames: {}, getTypeFromName: getGlobalFromName, metadata: [], types: [{func: 1, ret: P.Null}, {func: 1, ret: -1}, {func: 1, ret: -1, args: [W.MouseEvent]}, {func: 1, ret: -1, args: [{func: 1, ret: -1}]}, {func: 1, args: [,]}, {func: 1, ret: P.Null, args: [,]}, {func: 1, args: [, P.String]}, {func: 1, args: [P.String]}, {func: 1, ret: P.Null, args: [{func: 1, ret: -1}]}, {func: 1, ret: P.Null, args: [,], opt: [P.StackTrace]}, {func: 1, ret: [P._Future,,], args: [,]}, {func: 1, args: [W.Event]}], interceptorsByTag: null, leafTags: null};
+  var init = {mangledGlobalNames: {int: "int", double: "double", num: "num", String: "String", bool: "bool", Null: "Null", List: "List"}, mangledNames: {}, getTypeFromName: getGlobalFromName, metadata: [], types: [{func: 1, ret: P.Null}, {func: 1, ret: -1, args: [W.MouseEvent]}, {func: 1, ret: -1}, {func: 1, ret: -1, args: [{func: 1, ret: -1}]}, {func: 1, args: [,]}, {func: 1, ret: P.Null, args: [,]}, {func: 1, args: [, P.String]}, {func: 1, args: [P.String]}, {func: 1, ret: P.Null, args: [{func: 1, ret: -1}]}, {func: 1, ret: P.Null, args: [,], opt: [P.StackTrace]}, {func: 1, ret: [P._Future,,], args: [,]}, {func: 1, args: [W.Event]}], interceptorsByTag: null, leafTags: null};
   (function staticFields() {
     $.Closure_functionCounter = 0;
     $.BoundClosure_selfFieldNameCache = null;

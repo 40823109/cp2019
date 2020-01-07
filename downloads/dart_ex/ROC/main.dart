@@ -17,6 +17,9 @@ void main() {
   querySelector("#usa").onClick.listen((e) => drawUSA(ctx));
   querySelector("#button").onClick.listen((e) => clearCanvas());
   querySelector("#uk").onClick.listen((e) => drawUK(ctx));
+  querySelector("#japan").onClick.listen((e) => drawJapan(ctx));
+  querySelector("#France").onClick.listen((e) => drawFrance(ctx));
+  querySelector("#Russia").onClick.listen((e) => drawRussia(ctx));
 }
 
 void drawUK(ctx){
@@ -186,4 +189,34 @@ void drawROC(ctx){
 
 void clearCanvas(){
   ctx.clearRect(0, 0, flag_w, flag_h);
+}
+
+void drawJapan(ctx){
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  ctx.beginPath();
+  ctx.arc(150, 100, 60, 0,  Math.pi * 2, true);
+  ctx.closePath();
+  ctx.fillStyle = 'rgb(188, 0, 45)';
+  ctx.fill();
+}
+
+void drawFrance(ctx){
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = 'rgb(0,85,164)';
+  ctx.fillRect(0, 0, flag_w / 3, flag_h);
+  ctx.fillStyle = 'rgb(239,65,53)';
+  ctx.fillRect(200, 0, flag_w / 3, flag_h);
+}
+void drawRussia(ctx){  
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = 'rgb(0, 61, 165)';
+  ctx.fillRect(0, 0, flag_w, flag_h /3);
+  ctx.fillStyle = 'rgb(170, 0, 40)';
+  ctx.fillRect(0, 133.333333, flag_w, flag_h /3);
 }
