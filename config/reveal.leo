@@ -34,9 +34,6 @@
 <v t="leo.20180902120523.18"><vh>各國國旗</vh>
 <v t="leo.20180902120523.19"><vh>iframe 導入影片</vh></v>
 </v>
-<v t="leo.20200108012553.1"><vh>for迴圈</vh>
-<v t="leo.20200108012557.1"><vh>newHeadline</vh></v>
-</v>
 <v t="leo.20200108013143.1"><vh>心得</vh>
 <v t="leo.20200108013150.1"><vh>newHeadline</vh></v>
 </v>
@@ -51,7 +48,7 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## 計算機程式概論
+<t tx="leo.20180902120523.10">## 計算機程式概論期末報告
 
 ### 40823109
 
@@ -77,8 +74,7 @@ Created by [40823109](http://lab.kmol.info/)
 * [溫度轉換](https://40823109.github.io/cp2019/reveal/index.html#/2)
 * [重量轉換](https://40823109.github.io/cp2019/reveal/index.html#/2/1)
 * [各國國旗](https://40823109.github.io/cp2019/reveal/index.html#/2/2)
-* [FOR迴圈](https://40823109.github.io/cp2019/reveal/index.html#/2/3)
-* [心得](https://40823109.github.io/cp2019/reveal/index.html#/2/4)
+* [心得](https://40823109.github.io/cp2019/reveal/index.html#/2/3)
 </t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
@@ -299,15 +295,6 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
-<t tx="leo.20200108012553.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-</t>
-<t tx="leo.20200108012557.1">## FOR迴圈
-
-&lt;iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=40823109&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200108013143.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
